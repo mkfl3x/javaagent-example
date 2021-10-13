@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+}
+
+group 'org.application'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.application.Application'
+    }
+}

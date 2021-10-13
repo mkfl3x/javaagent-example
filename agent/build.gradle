@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.agent'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'javassist:javassist:3.12.1.GA'
+}
+
+jar {
+    manifest {
+        attributes 'Premain-Class': 'org.agent.Agent'
+    }
+}
