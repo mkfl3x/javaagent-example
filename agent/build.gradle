@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
 }
 
 group 'org.agent'
@@ -9,10 +10,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'javassist:javassist:3.12.1.GA'
+    implementation 'org.javassist:javassist:3.28.0-GA'
 }
 
-jar {
+shadowJar {
     manifest {
         attributes 'Premain-Class': 'org.agent.Agent'
     }
