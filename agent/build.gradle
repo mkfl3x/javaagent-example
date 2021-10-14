@@ -17,4 +17,5 @@ shadowJar {
     manifest {
         attributes 'Premain-Class': 'org.agent.Agent'
     }
+    archiveName = 'agent.jar'
 }
