@@ -1,4 +1,4 @@
-# javagent-example
+# javaagent-example
 Example how to change one method of application runned with javaagent (javassist used)
 
 ### How to run
